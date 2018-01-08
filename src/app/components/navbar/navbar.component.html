@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-4">
+	<div class="container">
+		<a class="navbar-brand" routerLink="/"><small>Client</small><strong>Panel</strong></a>
+		
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+		 aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item" *ngIf="!isLoggedIn">
+					<a class="nav-link" href="#" routerLink="/login"><i class="fa fa-sign-in"></i> Login</a>
+				</li>
+				<li class="nav-item" *ngIf="!isLoggedIn && showRegister">
+					<a class="nav-link" href="#" routerLink="/register"><i class="fa fa-user"></i> Register</a>
+				</li>
+
+				<li class="nav-item dropdown" *ngIf="isLoggedIn">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i> {{loggedInUser}}</a>
+
+					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#" routerLink="/"><i class="fa fa-dashboard"></i> Dashboard</a>
+						<a class="dropdown-item" href="#" routerLink="/add-client"><i class="fa fa-plus"></i> Add new client</a>
+						<a class="dropdown-item" href="#" routerLink="/settings"><i class="fa fa-cog"></i> Settings</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#" (click)="onLogOutClick()"><i class="fa fa-sign-out"></i> Logout</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
