@@ -1,0 +1,5 @@
+.simple-list-group li {
+	background-color: transparent !important;
+	border: 0 !important;
+	padding: 0.3rem;	
+}

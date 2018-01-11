@@ -11,7 +11,7 @@
 							<div class="input-group-prepend">
 								<span class="input-group-text"><i class="fa fa-user"></i></span>
 							</div>
-							<input class="form-control" type="email" name="email" [(ngModel)]="email" required>
+							<input class="form-control" type="email" name="email" placeholder="Your registered e-mail" [(ngModel)]="email" required>
 						</div>
 					</div>
 
@@ -19,11 +19,11 @@
 						<label for="password">Password</label>
 						<div class="input-group">
 							<div class="input-group-prepend">
-								<span class="input-group-text"><i class="fa fa-lock"></i></span>
+								<span class="input-group-text"><i class="fa fa-key"></i></span>
 							</div>
-							<input class="form-control" type="password" name="password" [(ngModel)]="password" required>
+							<input class="form-control" type="password" name="password" placeholder="Your password" [(ngModel)]="password" required>
 						</div>
-						<button class="btn btn-primary btn-block mt-3" type="submit"><i class="fa fa-sign-in"></i> Login</button>
+						<button class="btn btn-primary btn-lg btn-block mt-3" type="submit"><i class="fa fa-sign-in"></i> Login</button>
 					</div>
 				</form>
 			</div>
