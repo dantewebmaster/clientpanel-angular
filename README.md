@@ -1,4 +1,4 @@
-# clientPanel - Angular
+# ClientPanel - Angular
 
 This is a project created by following the course[Angular 4 Front to Back](https://www.udemy.com/angular-4-front-to-back/learn/v4/overview) by [Brad Traversy](http://traversymedia.com). Of course there are a ton of enhancements made by me. For example, fontawesome icon, better navigation and improved Bootstrap 4 UI.
 There are so many other enhancements that I want to make with new skills that I pretend to study in the future.
